@@ -24,5 +24,5 @@ class AndRule:
         self.rules = args
 
     def matches(self, exchange):
-        print (["{} {}".format(rule.symbol, rule.condition) for rule in self.rules])
+        #print (["{} {}".format(rule.symbol, rule.condition) for rule in self.rules])
         return all([rule.matches(exchange) for rule in self.rules])
